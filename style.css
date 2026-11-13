@@ -1,0 +1,333 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #09090d;
+    color: #c8c8d0;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 14px;
+    background-image:
+        radial-gradient(
+            rgba(255, 255, 255, 0.025) 1px,
+            transparent 1px
+        );
+    background-size: 4px 4px;
+}
+
+header {
+    width: 900px;
+    max-width: 94%;
+    margin: 25px auto 0;
+}
+
+.topo {
+    background: #11111a;
+    border: 1px solid #4a4a66;
+    padding: 25px;
+    text-align: center;
+    box-shadow:
+        0 0 0 3px #08080c,
+        0 0 15px rgba(80, 70, 130, 0.15);
+}
+
+.topo h1 {
+    margin: 0;
+    color: #b7a5ff;
+    font-size: 38px;
+    letter-spacing: 5px;
+    text-shadow:
+        2px 2px 0 #30284b;
+}
+
+.subtitulo {
+    margin: 10px 0 0;
+    color: #777789;
+    font-size: 12px;
+    font-style: italic;
+}
+
+nav {
+    margin-top: 8px;
+    background: #15151e;
+    border: 1px solid #414158;
+    padding: 8px;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    padding: 7px 12px;
+    margin: 0 2px;
+    color: #9d8cff;
+    text-decoration: none;
+    font-size: 12px;
+    border: 1px solid transparent;
+}
+
+
+nav a:hover {
+    color: #ffffff;
+    background: #29243c;
+    border: 1px solid #62558d;
+}
+
+main {
+    width: 900px;
+    max-width: 94%;
+    margin: 15px auto;
+}
+
+.caixa {
+    margin-bottom: 18px;
+    background: #101017;
+    border: 1px solid #3c3c52;
+    box-shadow:
+        3px 3px 0 #050507;
+}
+
+.titulo-caixa {
+    padding: 8px 12px;
+    background: #242034;
+    border-bottom: 1px solid #4d456b;
+    color: #c0b5ef;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.titulo-caixa span {
+    color: #8f7ce5;
+    margin-right: 5px;
+}
+
+.conteudo {
+    padding: 18px;
+    line-height: 1.7;
+}
+
+.conteudo p {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #d0c6ff;
+    font-size: 21px;
+    margin-top: 5px;
+    border-bottom: 1px dotted #454055;
+    padding-bottom: 7px;
+}
+
+h3 {
+    color: #aa9be0;
+    font-size: 15px;
+    margin-top: 0;
+}
+
+a {
+    color: #9382e8;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #ffffff;
+    background: #332c4b;
+}
+
+.data {
+    color: #666675;
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.aviso {
+    margin-top: 25px;
+    padding: 10px;
+    border: 1px dashed #6a5b92;
+    background: #15121f;
+    color: #9e90bd;
+    font-size: 12px;
+}
+
+.nota-misteriosa {
+    margin: 25px 0;
+    padding: 15px;
+    background: #0b0b10;
+    border-left: 3px solid #69558f;
+    color: #9993aa;
+    font-family: "Courier New", monospace;
+    box-shadow: inset 0 0 15px rgba(80, 70, 120, 0.08);
+}
+
+.nota-misteriosa p {
+    margin-bottom: 5px;
+}
+
+.nota-misteriosa p:first-child {
+    color: #c5b7e9;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.misterio {
+    color: #8e82aa;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.assinatura {
+    color: #666674;
+    text-align: right;
+    font-size: 11px;
+}
+
+.exploracao {
+    margin-bottom: 15px;
+    padding: 12px;
+    background: #0c0c12;
+    border: 1px solid #2e2e3c;
+}
+
+.exploracao:last-child {
+    margin-bottom: 0;
+}
+
+.status {
+    display: inline-block;
+    padding: 3px 7px;
+    margin-top: 5px;
+    border: 1px solid #46533f;
+    color: #819978;
+    font-size: 10px;
+    background: #10160e;
+}
+
+.status.misterio {
+    border-color: #66526f;
+    color: #a48ab1;
+    background: #150f18;
+}
+
+.galeria {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.foto {
+    width: calc(33.333% - 10px);
+    min-width: 180px;
+}
+
+
+.fotoexploracao {
+    height: 140px;
+    background:
+        repeating-linear-gradient(
+            45deg,
+            #15151c,
+            #15151c 8px,
+            #111117 8px,
+            #111117 16px
+        );
+    border: 1px solid #454558;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5d5d6c;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.foto p {
+    margin-top: 6px;
+    color: #777784;
+    font-size: 11px;
+    text-align: center;
+}
+
+.pequeno {
+    color: #656572;
+    font-size: 11px;
+}
+
+footer {
+    width: 900px;
+    max-width: 94%;
+    margin: 30px auto;
+    padding: 20px;
+    background: #0d0d13;
+    border-top: 1px solid #3a3949;
+    text-align: center;
+    color: #555562;
+    font-size: 11px;
+}
+
+.contador {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 4px 8px;
+    background: #050507;
+    border: 1px solid #282832;
+    color: #777784;
+    font-family: monospace;
+}
+
+.codigo {
+    margin-top: 15px;
+    color: #393944;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 650px) {
+    .topo h1 {
+        font-size: 25px;
+        letter-spacing: 3px;
+    }
+
+    nav a {
+        display: block;
+        margin: 3px 0;
+    }
+
+    .foto {
+        width: 100%;
+    }
+
+    .galeria {
+        display: block;
+    }
+
+    .foto {
+        margin-bottom: 15px;
+    }
+}
+
+.fotoexploracao {
+    height: 180px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.fotoexploracao img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 650px) {
+    .fotoexploracao {
+        height: 220px;
+    }
+}
